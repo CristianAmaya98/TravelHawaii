@@ -1,16 +1,13 @@
 module.exports = {
-	root: true,
 	env: {
-		node: true,
-		es6: true,
+		browser: true,
+		commonjs: true,
+		es2021: true,
 	},
-	extends: ['eslint:recommended', 'prettier'],
+	extends: 'eslint:recommended',
+	overrides: [],
 	parserOptions: {
-		ecmaVersion: 2020,
-		parser: 'babel-eslint',
-		sourceType: 'module',
+		ecmaVersion: 'latest',
 	},
-	rules: {
-		// tus reglas de Eslint aquí
-	},
+	rules: {},
 };
