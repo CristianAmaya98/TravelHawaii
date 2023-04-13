@@ -1,0 +1,41 @@
+<div class="tour">
+    <div class="tour__imagen-container">
+        <img class="tour__imagen" src=@@image alt="inspired1">
+        <div class="tour__description">
+            <p>@@title</p>
+            <span>
+                Discover more
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </span>
+        </div>
+    </div>
+
+    @@if (info === true) {
+    <div class="tour__info">
+        <span class="tour__info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgb(128, 128, 128);">
+                <path
+                    d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm3.293 14.707L11 12.414V6h2v5.586l3.707 3.707-1.414 1.414z">
+                </path>
+            </svg>
+            1 hour 30 min
+        </span>
+
+        <span class="tour__info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: rgb(128, 128, 128);">
+                <path
+                    d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8 8a2 2 0 0 0 2.828 0l7.172-7.172a2 2 0 0 0 0-2.828l-8-8zM7 9a2 2 0 1 1 .001-4.001A2 2 0 0 1 7 9z">
+                </path>
+            </svg>
+            $399
+        </span>
+    </div>
+    }
+
+
+</div>

@@ -1,0 +1,23 @@
+@use "../base/variables" as v;
+
+.redes {
+  position: absolute;
+  width: auto;
+  right: -6rem;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  transform: rotate(90deg);
+
+  &__text {
+    font-weight: 500;
+    color: v.$color-white;
+  }
+
+  &__text,
+  &__icon {
+    cursor: pointer;
+  }
+}
