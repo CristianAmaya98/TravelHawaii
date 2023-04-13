@@ -9,7 +9,9 @@
 		"lint": "npx eslint gulpfile.js",
 		"prettier": "prettier --write \"*.js\"",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"predeploy": "gulp build",
+		"deploy": "gh-pages -d dist"
 	},
 	"repository": {
 		"type": "git",
@@ -27,6 +29,7 @@
 		"@commitlint/config-conventional": "^17.6.0",
 		"commitlint": "^17.6.0",
 		"eslint": "^8.38.0",
+		"gh-pages": "^5.0.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-connect": "^5.7.0",

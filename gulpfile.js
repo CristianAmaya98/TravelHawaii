@@ -100,6 +100,8 @@ function watchAndReload() {
 	watch(config.scss.watch, taskCompilarSCSS);
 }
 
+exports.build = series(taskCompilarHTML, taskCompilarSCSS, assetsTransfer);
+
 exports.dev = series(
 	taskCompilarHTML,
 	taskCompilarSCSS,
