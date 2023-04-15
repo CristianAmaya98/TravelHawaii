@@ -1,20 +1,58 @@
 <div id="flight" class="flight">
 	<div class="flight__container">
-		@@include('./header-section.html', { "title": "FIND YOUR EASY FLIGHT",
-		"subtitle": "Top Round-trip Flight Deals", "description": "" })
+		<!-- prettier-ignore -->
+		@@include('./header-section.html', {
+		"title": "FIND YOUR EASY FLIGHT",
+		"subtitle": "Top Round-trip Flight Deals",
+		"description": ""
+		})
 
 		<div class="flight__grid">
-			@@loop('./card-flight.html', [ { "origin": "HongKong", "destination":
-			"Bangkok", "dateStart": "Sun, May 23", "dateEnd": "Web, May 27", "price":
-			"399" }, { "origin": "HongKong", "destination": "Hamilton", "dateStart":
-			"Sun, May 23", "dateEnd": "Web, May 27", "price": "999" }, { "origin":
-			"HongKong", "destination": "Washington D.C.", "dateStart": "Sun, May 23",
-			"dateEnd": "Web, May 27", "price": "250" }, { "origin": "Abuja",
-			"destination": "Tehran", "dateStart": "Sun, May 23", "dateEnd": "Web, May
-			27", "price": "80" }, { "origin": "HongKong", "destination": "Georgetown",
-			"dateStart": "Sun, May 23", "dateEnd": "Web, May 27", "price": "355" }, {
-			"origin": "HongKong", "destination": "Barcelona", "dateStart": "Sun, May
-			23", "dateEnd": "Web, May 27", "price": "270" }, ])
+			<!-- prettier-ignore -->
+			@@loop('./card-flight.html', [
+			{
+			"origin": "HongKong",
+			"destination": "Bangkok",
+			"dateStart": "Sun, May 23",
+			"dateEnd": "Web, May 27",
+			"price": "399"
+			},
+			{
+			"origin": "HongKong",
+			"destination": "Hamilton",
+			"dateStart": "Sun, May 23",
+			"dateEnd": "Web, May 27",
+			"price": "999"
+			},
+			{
+			"origin": "HongKong",
+			"destination": "Washington D.C.",
+			"dateStart": "Sun, May 23",
+			"dateEnd": "Web, May 27",
+			"price": "250"
+			},
+			{
+			"origin": "Abuja",
+			"destination": "Tehran",
+			"dateStart": "Sun, May 23",
+			"dateEnd": "Web, May 27",
+			"price": "80"
+			},
+			{
+			"origin": "HongKong",
+			"destination": "Georgetown",
+			"dateStart": "Sun, May 23",
+			"dateEnd": "Web, May 27",
+			"price": "355"
+			},
+			{
+			"origin": "HongKong",
+			"destination": "Barcelona",
+			"dateStart": "Sun, May 23",
+			"dateEnd": "Web, May 27",
+			"price": "270"
+			},
+			])
 		</div>
 	</div>
 </div>

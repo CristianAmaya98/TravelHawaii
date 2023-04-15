@@ -1,21 +1,56 @@
 <div class="adventure">
 	<div class="adventure__contenido adventure__container">
+		<!-- prettier-ignore -->
+
+		<!-- prettier-ignore-attribute -->
 		@@include('./header-section.html', { "title": "FIND YOUR ADVENTURE",
 		"subtitle": "Most Popular Tours", "description": "Lorem ipsum dolor sit amet
 		consectetur adipisicing elit. Quo laudantium ut cupiditate veritatis
 		voluptas atque dolore vero quaerat at beatae voluptatum pariatur
 		perspiciatis ad minus quos, dignissimos itaque quibusdam? Architecto." })
 		<div class="adventure__grid">
-			@@loop('card-tour.html', [ { "title": "Surfing in the sea", "image":
-			"./assets/img/tour1.jpg", "info": true }, { "title": "Relaxing on beach",
-			"image": "./assets/img/tour2.jpg", "info": true }, { "title": "Kayaking",
-			"image": "./assets/img/tour3.jpg", "info": true }, { "title": "Iceland",
-			"image": "./assets/img/tour4.jpg", "info": true }, { "title": "Visit
-			Wooden Bridge", "image": "./assets/img/tour5.jpg", "info": true }, {
-			"title": "Beautiful Sunset", "image": "./assets/img/tour6.jpg", "info":
-			true }, { "title": "Beach house", "image": "./assets/img/tour7.jpg",
-			"info": true }, { "title": "Water House", "image":
-			"./assets/img/tour8.jpg", "info": true }, ])
+			<!-- prettier-ignore -->
+			@@loop('card-tour.html', [
+			{
+			"title": "Surfing in the sea",
+			"image": "./assets/img/tour1.jpg",
+			"info": true
+			},
+			{
+			"title": "Relaxing on beach",
+			"image": "./assets/img/tour2.jpg",
+			"info": true
+			},
+			{
+			"title": "Kayaking",
+			"image": "./assets/img/tour3.jpg",
+			"info": true
+			},
+			{
+			"title": "Iceland",
+			"image": "./assets/img/tour4.jpg",
+			"info": true
+			},
+			{
+			"title": "Visit Wooden Bridge",
+			"image": "./assets/img/tour5.jpg",
+			"info": true
+			},
+			{
+			"title": "Beautiful Sunset",
+			"image": "./assets/img/tour6.jpg",
+			"info": true
+			},
+			{
+			"title": "Beach house",
+			"image": "./assets/img/tour7.jpg",
+			"info": true
+			},
+			{
+			"title": "Water House",
+			"image": "./assets/img/tour8.jpg",
+			"info": true
+			}, ])
 		</div>
 	</div>
 </div>
