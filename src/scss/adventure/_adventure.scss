@@ -1,10 +1,25 @@
-.adventure {
-  &__info {
-  }
+@use '../base/variables' as v;
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 3rem;
-  }
+.adventure {
+	padding: 6rem 0 13rem 0;
+
+	&__contenido {
+		padding-bottom: 13rem;
+		border-bottom: 1px solid lighten($color: v.$text-color-gray, $amount: 30%);
+	}
+
+	&__grid {
+		margin-top: 4rem;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 3rem;
+	}
+
+	&__grid > .tour {
+		transition-property: transform;
+		transition-duration: 0.3s;
+	}
+	&__grid > .tour:hover {
+		transform: scale(1.1);
+	}
 }

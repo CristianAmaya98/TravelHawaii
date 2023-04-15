@@ -37,7 +37,6 @@
 		"gulp-file-include": "^2.3.0",
 		"gulp-format-html": "^1.5.2",
 		"gulp-htmlmin": "^5.0.1",
-		"gulp-imagemin": "^8.0.0",
 		"gulp-remove-empty-lines": "^0.1.0",
 		"gulp-sass": "^5.1.0",
 		"gulp-sourcemaps": "^3.0.0",

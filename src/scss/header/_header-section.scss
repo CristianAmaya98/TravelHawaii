@@ -1,0 +1,29 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1rem;
+
+	&__title {
+		color: v.$text-color-blue;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	&__subtitle {
+		font-size: 3.5rem;
+		font-weight: 500;
+	}
+
+	&__description {
+		margin: 0;
+		text-align: center;
+		max-width: 72rem;
+		line-height: 1.6;
+		font-weight: 700;
+		color: v.$text-color-gray;
+	}
+}

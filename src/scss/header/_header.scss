@@ -1,84 +1,96 @@
-@use "../base/variables" as v;
-@use "../base/mixins" as m;
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .header {
-  background-image: linear-gradient(
-    to right,
-    v.$bg-primary 50%,
-    v.$bg-secundary 100%
-  );
-  padding: 4rem 1rem;
-  position: relative;
-  overflow-x: hidden;
+	background-image: linear-gradient(
+		to right,
+		v.$bg-primary 50%,
+		v.$bg-secundary 100%
+	);
+	padding: 4rem 1rem;
+	position: relative;
+	overflow-x: hidden;
 
-  &__navbar-container {
-    display: flex;
-    justify-content: space-between;
-  }
+	&__navbar-container {
+		display: flex;
+		justify-content: space-between;
+	}
 
-  &__logo {
-    font-size: 2.2rem;
-    color: v.$color-white;
-    font-family: v.$fuente-secundary;
-    letter-spacing: 0.2rem;
-    font-weight: 400;
-  }
+	&__logo {
+		font-size: 2.2rem;
+		color: v.$color-white;
+		font-family: v.$fuente-secundary;
+		letter-spacing: 0.2rem;
+		font-weight: 400;
+		display: flex;
+		align-items: center;
+		position: relative;
 
-  &__navbar {
-    display: flex;
-    justify-content: space-around;
-    gap: 4rem;
-  }
+		&::before {
+			content: '';
+			position: absolute;
+			left: -5rem;
+			width: 4rem;
+			height: 4rem;
+			@include m.bgImagen('assets/icons/icon.png');
+		}
+	}
 
-  &__navbar-item {
-    color: v.$color-white;
-  }
+	&__navbar {
+		display: flex;
+		justify-content: space-around;
+		gap: 4rem;
+	}
 
-  &__body {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 70vh;
-     margin-bottom: 2rem;
-  }
+	&__navbar-item {
+		color: v.$color-white;
+	}
 
-  &__body-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
-  }
+	&__body {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		height: 70vh;
+		margin-bottom: 2rem;
+	}
 
-  &__info {
-    max-width: 40rem;
-  }
+	&__body-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 3rem;
+	}
 
-  &__text {
-    margin: 0;
-    color: v.$color-white;
-    font-size: 8rem;
-    font-weight: bold;
-    text-shadow: 0px 1px 5px rgba(255, 255, 255, 0.97);
-  }
+	&__info {
+		max-width: 40rem;
+	}
 
-  &__button {
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-    border: 1px solid v.$color-white;
-    padding: 0.6rem 2rem;
-    border-radius: 1rem;
-    color: v.$color-white;
-    font-weight: 100;
-    cursor: pointer;
-  }
+	&__text {
+		margin: 0;
+		color: v.$color-white;
+		font-size: 8rem;
+		font-weight: bold;
+		text-shadow: 0px 1px 5px rgba(255, 255, 255, 0.97);
+	}
 
-  &__icon {
-    width: 4rem;
-  }
+	&__button {
+		display: inline-flex;
+		justify-content: space-around;
+		align-items: center;
+		gap: 1rem;
+		border: 1px solid v.$color-white;
+		padding: 0.6rem 2rem;
+		border-radius: 1rem;
+		color: v.$color-white;
+		font-weight: 100;
+		cursor: pointer;
+	}
 
-  &__imagen {
-    @include m.bgImagen("./assets/icons/logo.png");
-  }
+	&__icon {
+		width: 4rem;
+	}
+
+	&__imagen {
+		@include m.bgImagen('./assets/icons/logo.png');
+	}
 }

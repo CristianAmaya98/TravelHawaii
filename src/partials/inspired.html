@@ -1,33 +1,54 @@
-<section class="inspired">
-    <div class="inspired__contenido inspired__container">
-        <div class="inspired__experiencie">
-            <p class="inspired__experiencie-title">EXPERIENCE HAWAII</p>
+<section id="inspired" class="inspired">
+	<div class="inspired__contenido inspired__container">
+		<div class="inspired__experiencie">
+			<p class="inspired__experiencie-title">EXPERIENCE HAWAII</p>
 
-            <span class="inspired__experiencie-subtitle">Get inspired</span>
-            <p class="inspired__experiencie-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Temporibus beatae autem animi.</p>
+			<span class="inspired__experiencie-subtitle">Get inspired</span>
+			<p class="inspired__experiencie-description">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+				beatae autem animi.
+			</p>
 
-            <div class="inspired__rows-container">
-                <svg class="inspired__row" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <svg class="inspired__row" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            </div>
-        </div>
+			<div class="inspired__rows-container">
+				<svg
+					class="inspired__row"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-6 h-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+					/>
+				</svg>
+				<svg
+					class="inspired__row"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					class="w-6 h-6"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+					/>
+				</svg>
+			</div>
+		</div>
 
-        <div class="inspired__tours">
-
-            @@loop('card-tour.html', [
-            { "title": "Surfing in the sea", "image": "./assets/img/inspired1.jpg","info": false },
-            { "title": "Organic Food", "image": "./assets/img/inspired2.jpg", "info": false },
-            { "title": "Rocksolid Beach", "image": "./assets/img/inspired3.jpg", "info": false },
-            ])
-        </div>
-    </div>
+		<div class="inspired__tours">
+			@@loop('card-tour.html', [ { "title": "Surfing in the sea", "image":
+			"./assets/img/inspired1.jpg","info": false }, { "title": "Organic Food",
+			"image": "./assets/img/inspired2.jpg", "info": false }, { "title":
+			"Rocksolid Beach", "image": "./assets/img/inspired3.jpg", "info": false },
+			])
+		</div>
+	</div>
 </section>

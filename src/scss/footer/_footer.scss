@@ -1,0 +1,37 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.footer {
+	&__contenido {
+		border-top: 1px solid lighten($color: v.$text-color-gray, $amount: 30%);
+		padding: 8rem 0 0;
+	}
+	&__nav {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 5rem;
+	}
+
+	&__section {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__item {
+		font-weight: 100;
+		color: v.$text-color-gray;
+		font-size: 1.8rem;
+		cursor: pointer;
+	}
+
+	&__item--bold {
+		font-weight: 900;
+		color: v.$text-color-black;
+		margin-bottom: 2rem;
+	}
+
+	&__copyright {
+		padding: 1rem 0;
+	}
+}
