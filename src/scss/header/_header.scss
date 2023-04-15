@@ -3,7 +3,7 @@
 
 .header {
 	background-image: linear-gradient(
-		to right,
+		to bottom,
 		v.$bg-primary 50%,
 		v.$bg-secundary 100%
 	);
@@ -11,9 +11,26 @@
 	position: relative;
 	overflow-x: hidden;
 
+	@include m.tablet {
+		background-image: linear-gradient(
+			to right,
+			v.$bg-primary 50%,
+			v.$bg-secundary 100%
+		);
+	}
+
 	&__navbar-container {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+
+		@include m.tablet {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: unset;
+			gap: unset;
+		}
 	}
 
 	&__logo {
@@ -47,30 +64,47 @@
 	}
 
 	&__body {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		display: flex;
+		flex-direction: column-reverse;
 		height: 70vh;
-		margin-bottom: 2rem;
+
+		@include m.tablet {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			margin-bottom: 2rem;
+		}
 	}
 
 	&__body-info {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: flex-start;
+		align-items: center;
 		gap: 3rem;
+
+		@include m.tablet {
+			align-items: flex-start;
+		}
 	}
 
 	&__info {
-		max-width: 40rem;
+		text-align: center;
+		@include m.tablet {
+			max-width: 40rem;
+			text-align: start;
+		}
 	}
 
 	&__text {
 		margin: 0;
 		color: v.$color-white;
-		font-size: 8rem;
+		font-size: 5rem;
 		font-weight: bold;
 		text-shadow: 0px 1px 5px rgba(255, 255, 255, 0.97);
+
+		@include m.tablet {
+			font-size: 8rem;
+		}
 	}
 
 	&__button {
@@ -84,6 +118,9 @@
 		color: v.$color-white;
 		font-weight: 100;
 		cursor: pointer;
+
+		@include m.tablet {
+		}
 	}
 
 	&__icon {
@@ -92,5 +129,9 @@
 
 	&__imagen {
 		@include m.bgImagen('./assets/icons/logo.png');
+
+		@include m.tablet {
+			@include m.bgImagen('./assets/icons/logo.png');
+		}
 	}
 }

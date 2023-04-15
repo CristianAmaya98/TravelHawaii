@@ -1,4 +1,5 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .adventure {
 	padding: 6rem 0 13rem 0;
@@ -11,8 +12,12 @@
 	&__grid {
 		margin-top: 4rem;
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 3rem;
+
+		@include m.tablet {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 
 	&__grid > .tour {

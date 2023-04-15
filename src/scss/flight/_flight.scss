@@ -1,9 +1,15 @@
+@use '../base/mixins' as m;
+
 .flight {
 	&__grid {
 		margin-top: 8rem;
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 2rem 4rem;
+		grid-template-columns: 1fr;
+
+		@include m.tablet {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2rem 4rem;
+		}
 	}
 
 	&__grid > .card {
