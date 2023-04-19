@@ -6,6 +6,7 @@
 	flex-direction: column;
 	align-items: center;
 	row-gap: 1rem;
+	text-align: center;
 
 	&__title {
 		color: v.$text-color-blue;
@@ -20,7 +21,6 @@
 
 	&__description {
 		margin: 0;
-		text-align: center;
 		max-width: 72rem;
 		line-height: 1.6;
 		font-weight: 700;

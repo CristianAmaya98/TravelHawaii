@@ -54,24 +54,56 @@
 	}
 
 	&__navbar {
+		width: 100%;
 		display: flex;
-		justify-content: space-around;
-		gap: 4rem;
+		flex-direction: column;
+		gap: 2rem;
+
+		@include m.tablet {
+			width: auto;
+			flex-direction: row;
+			justify-content: space-around;
+			gap: 4rem;
+		}
 	}
 
 	&__navbar-item {
+		width: 100%;
+		display: block;
 		color: v.$color-white;
+		text-align: center;
+		padding: 0.5rem 0;
+		border: 1px solid lighten($color: v.$color-white, $amount: 30%);
+		transition-property: transform;
+		transition-duration: 0.3s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+
+		@include m.tablet {
+			width: auto;
+			border: 1px solid transparent;
+			transition-property: unset;
+			transition-duration: unset;
+			padding: 0;
+
+			&:hover {
+				transform: unset;
+			}
+		}
 	}
 
 	&__body {
 		display: flex;
 		flex-direction: column-reverse;
-		height: 70vh;
+		height: 75vh;
 
 		@include m.tablet {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
 			margin-bottom: 2rem;
+			height: 70vh;
 		}
 	}
 
@@ -129,9 +161,10 @@
 
 	&__imagen {
 		@include m.bgImagen('./assets/icons/logo.png');
+		height: 80rem;
 
-		@include m.tablet {
-			@include m.bgImagen('./assets/icons/logo.png');
+		@include m.desktop {
+			height: auto;
 		}
 	}
 }
