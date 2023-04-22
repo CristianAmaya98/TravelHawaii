@@ -1,0 +1,22 @@
+@use '../base/mixins' as m;
+
+.flight {
+	&__grid {
+		margin-top: 8rem;
+		display: grid;
+		grid-template-columns: 1fr;
+
+		@include m.tablet {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2rem 4rem;
+		}
+	}
+
+	&__grid > .card {
+		transition-property: transform;
+		transition-duration: 0.3s;
+	}
+	&__grid > .card:hover {
+		transform: scale(1.1);
+	}
+}

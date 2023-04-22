@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+
+@mixin telefono {
+	@media (min-width: v.$telefono) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: v.$tablet) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: v.$desktop) {
+		@content;
+	}
+}
+
+@mixin boton {
+	all: unset;
+}
+
+@mixin bgImagen($url) {
+	background-image: url($url);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
