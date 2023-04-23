@@ -13,4 +13,4 @@ jobs:
       - name: Install App Dependecy
         run: npm install
       - name: Build de APP Deploy
-        run: npm run deploy --global
+        run: npm run predeploy
